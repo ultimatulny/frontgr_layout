@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="login-window">
+        <div class="login-window__main">
+          <img class="login-window__logo" src="./img/logo.svg" alt="Logo" />
+          <h1 class="login-window__title">Welcome friend!</h1>
+          <h2 class="login-window__subtitle">
+            Don't you have a profile?
+            <a class="login-window__link" href="#">Register</a>
+          </h2>
+          <div class="login-window__social-buttons">
+            <a class="login-window__social-btn" href="#">
+              <img src="./img/google-icon.svg" alt="Google icon" />
+            </a>
+            <a class="login-window__social-btn" href="#">
+              <img src="./img/github-icon.svg" alt="Github icon" />
+            </a>
+            <a class="login-window__social-btn" href="#">
+              <img src="./img/facebook-icon.svg" alt="Facebook icon" />
+            </a>
+            <a class="login-window__social-btn" href="#">
+              <img src="./img/vk-icon.svg" alt="Vk icon" />
+            </a>
+          </div>
+          <div class="login-window__horizontal-line">Or</div>
+          <form class="login-form">
+            <div class="login-form__field">
+              <label class="login-form__label" for="username">Email</label>
+              <input
+                class="login-form__input"
+                type="email"
+                id="username"
+                placeholder="yourname@mail.com"
+              />
+            </div>
+            <div class="login-form__field">
+              <label class="login-form__label" for="password">Password</label>
+              <div class="input-container">
+                <input
+                  class="login-form__input login-form__input-password"
+                  type="password"
+                  id="password"
+                  placeholder="Enter your password"
+                />
+                <button
+                  class="eye-button"
+                  aria-label="Toggle password visibility"
+                  id="toggle-password"
+                >
+                  <img
+                    src="./img/close-eye-icon.svg"
+                    alt="Eye icon"
+                    id="eye-icon"
+                  />
+                </button>
+              </div>
+            </div>
+            <button class="login-form__submit" type="submit">Sign in</button>
+          </form>
+          <a class="forgot-password-btn login-window__link" href="#"
+            >Forgot password</a
+          >
+        </div>
+        <img class="login-window__image" src="./img/image.png" alt="Image" />
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
