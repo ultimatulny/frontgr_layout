@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass src/scss -o src/css"
+    "sass": "node-sass src/scss -o public/css",
+    "copy-files": "npx copyfiles -V -f src/index.html src/app.js public && mkdir public\\img && xcopy /s /e /i src\\img public\\img",
+    "build": "npm run sass && npm run copy-files"
   },
   "keywords": [],
   "author": "",
